@@ -15,7 +15,9 @@ public class Node {
 	public Node(MemoryBlock block) {
 		this.block = block;
 	}
-	
+	public MemoryBlock getNodeBlock(){
+		return block;
+	}
 	/**
 	 * A textual representation of this node, for debugging.
 	 * The node's contents, which is a memory block, appears within

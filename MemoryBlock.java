@@ -19,6 +19,12 @@ public class MemoryBlock {
 		this.baseAddress = baseAddress;
 		this.length = length;
 	}
+	public int getbaseAddress(){
+		return baseAddress;
+	}
+	public int getlength(){
+		return length;
+	}
 
 	/**
 	 * Checks if this block has the same base address and length as the given block
