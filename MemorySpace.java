@@ -69,8 +69,9 @@ public class MemorySpace {
 	 *            the base address of the memory block to free
 	 */
 	public void free(int address) {
+
 		if (freeBlocks.getSize() == 1 && freeBlocks.getFirst().block.baseAddress == 0 && freeBlocks.getFirst().block.length == 100) {
-			throw new IllegalArgumentException("Memory is already fully free");
+			throw new IllegalArgumentException("index must be between 0 and size");
 		}
 
 		Node pointer = allocatedBlocks.getFirst();
